@@ -1,7 +1,10 @@
-import React from 'react';
-
-const API: React.FC = () => {
+export enum Difficulty {
+    EASY = "easy",
+    MEDIUM = "medium",
+    HARD = "hard",
 
 }
 
-export default API;
+export const fetchQuizQuestions = async (amount: number, difficulty:Difficulty) => {
+    const endpoint = `https:opentdb.com/api/php?amount=$`
+}
